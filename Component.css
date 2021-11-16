@@ -1,0 +1,504 @@
+.activity {
+    position: relative;
+    border-left: 3px dotted #eff2f9;
+    margin: 20px 20px 0 40px;
+}
+
+.activity .item-info {
+    margin-left: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.activity .item-info h6 {
+    font-weight: 500;
+    position: relative;
+    top: -3px;
+    color: #50649c;
+    font-size: 14px;
+}
+
+.activity .item-info span {
+    font-size: 11px;
+}
+
+.activity img,
+.activity i {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 12%;
+    position: absolute;
+    left: -19px;
+    color: #0072a2;
+    background-color: #f3f6f7;
+    font-size: 20px;
+    margin-top: -10px;
+    -webkit-box-shadow: 0px 0px 0px 0.5px #f3f6f7;
+    box-shadow: 0px 0px 0px 0.5px #f3f6f7;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.activity img.icon-primary,
+.activity i.icon-primary {
+    color: #0072a2;
+    background-color: #f6f7f9;
+}
+
+.activity img.icon-success,
+.activity i.icon-success {
+    color: #1ecab8;
+    background-color: #e2fbf8;
+}
+
+.activity img.icon-pink,
+.activity i.icon-pink {
+    color: #ff5da0;
+    background-color: #ffecf4;
+}
+
+
+.activity .mdi:before, .activity .mdi-set {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.text-muted {
+    color: #a4abc5 !important;
+}
+
+.text-muted a {
+    word-break: break-word;
+}
+
+.m-0, .mt-3 {
+    margin: 0
+}
+
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+
+.fa-google:before {
+    content: "\f1a0";
+}
+
+.fa-file-pdf:before {
+    content: "\f1c1";
+}
+
+.fa-link:before {
+    content: "\f0c1";
+}
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("../fonts/fa-brands-400.eot");
+    src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../fonts/fa-regular-400.eot");
+    src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("../fonts/fa-solid-900.eot");
+    src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+a {
+    font-family: 'Roboto Condensed', 'Roboto', 'Calibri', sans-serif;
+    color: #0072a2;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0;
+    text-decoration: none;
+    color: #002B3D;
+    background-color: #f8f8e2;
+}
+
+a:visited {
+    font-family: 'Roboto Condensed', 'Roboto', 'Calibri', sans-serif;
+    color: #4d97b3;
+}
+
+.h6, h6 {
+    margin: 10px 0;
+}
+
+
+.MuiListItem-button:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Hide snack bar on mobile landscape */
+@media only screen and (orientation: landscape) and (max-width: 720px) {
+  body.PrevalenceMap_VIEW > main > div > nav,
+  body.Maps_VIEW > main > div > nav {
+    display: none;
+  }
+}
+
+/* Covasim hack */
+
+article[itemid=Covasim] #chartContainer g[transform] > g[fill-opacity] {
+    fill-opacity: 1 !important;
+}
+
+/* contentCard */
+
+div[itemtype=contentCard] p:empty {
+    margin-top: -0.5em;
+}
+
+/* CHYRON */
+
+@import url('//fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+body.chyron main > div > header {
+    border: none;
+}
+
+body.chyron main > div > nav > menu {
+    top: 54px;
+    transition-property: top;
+    transition-duration: 200ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+}
+
+body.chyron header figure {
+    height: 44px;
+    border-bottom: 1px solid #fafad2;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    transition-property: height;
+    transition-duration: 200ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+body.chyron header figure button {
+    background-color: #cc0000;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+
+body header figure {
+    height: 0;
+    transition-property: height;
+    transition-duration: 100ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+body header figure figcaption {
+    height: inherit;
+    color: darkgoldenrod;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body header figure figcaption dl[itemprop=Updated] {
+    float: left;
+    margin-right: 0.5em;
+}
+
+body header figure figcaption dl.tabled,
+body header figure:not(.tabled) figcaption dl.date dd:nth-child(3) {
+    display: none;
+}
+
+body header figure figcaption dl,
+body header figure figcaption dl > * {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: mediumvioletred;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    position: relative;
+}
+
+body header figure figcaption dt {
+    padding-left: 0.7em;
+    font-variant: all-small-caps;
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+body header figure figcaption dt:after {
+    content: ":";
+}
+
+body header figure figcaption dd:not(:empty) {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 0 0.2em;
+}
+
+body header figure figcaption dl[itemprop=Deaths] dd {
+    color: inherit;
+}
+
+body header figure figcaption dl[itemprop=Updated] dd {
+    color: darkgoldenrod;
+    font-family: 'Roboto Condensed','Roboto','Calibri', sans-serif;
+    font-weight: unset;
+    font-size: 1em;
+    font-variant: all-small-caps;
+}
+
+body header figure figcaption dl dd.unit {
+    padding-left: 0.2em;
+    color: darkgoldenrod;
+    font-family: 'Roboto Condensed','Roboto','Calibri', sans-serif;
+    font-weight: unset;
+    font-size: unset;
+    font-size: 1em;
+    font-variant: all-small-caps;
+}
+
+body header figure:not(.tabled) figcaption dl dd.unit {
+    display: none;
+}
+
+body header figure figcaption dl dd:not(.unit):empty:after {
+    content: "No Data";
+    padding-left: 0.2em;
+    color: darkgoldenrod;
+    font-family: 'Roboto Condensed','Roboto', 'Calibri', sans-serif;
+    font-weight: unset;
+    font-size: unset;
+    font-size: 1em;
+    font-variant: all-small-caps;
+}
+
+body header figure figcaption ins {
+    position: relative;
+    float: right;
+    height: 0;
+    top: 7px;
+    right: unset;
+    padding: 0;
+    text-decoration: none;
+    color: goldenrod;
+    cursor: pointer;
+    zoom: 1.2;
+}
+
+body header figure figcaption ins > * {
+    color: rgba(218,165,32,0.8);
+    padding: 0 3px;
+}
+
+body header figure figcaption ins > *:hover {
+    color: #0072a2;
+}
+
+body header figure figcaption ins > *:active {
+    color: #000000;
+}
+
+body header figure figcaption ins > *:first-child {
+    transform: scale(-1,-1);
+}
+
+body header figure:not(.tabled) figcaption ins {
+    top: 7px;
+    right: 1rem;
+}
+
+body header figure.tabled figcaption ins {
+    display: inline-block !important;
+}
+
+li.chyronItem:hover {
+    background-color: beige !important;
+}
+
+li.chyronItem:nth-child(-n+11) {
+    color: mediumvioletred;
+}
+
+li.chyronItem:nth-child(1),
+li.chyronItem:nth-child(11) {
+    border-bottom: 1px solid grey;
+}
+
+li.chyronItem samp {
+    position: absolute;
+    right: 1em;
+    font-size: 12px;
+    color: #8888aa;
+}
+
+[itemtype=chyronSelect] [role=button] samp {
+    display: none;
+}
+
+/* CHYRON MOBILE OPEN */
+
+body.chyron header figure.tabled {
+    height: 17em;
+}
+
+body.chyron header figure.tabled figcaption {
+    max-width: 36rem;
+}
+
+body.chyron header figure.tabled figcaption dl {
+    display: table-row;
+    line-height: 1.9em;
+}
+
+body.chyron header figure.tabled figcaption dl:nth-child(odd) {
+    background: linear-gradient(to right,rgba(255,255,255,0.2),rgba(255,255,255,0.5),rgba(255,255,255,0.2));
+}
+
+body.chyron header figure.tabled figcaption dt {
+    display: table-cell;
+    width: 10%;
+    padding: 0;
+    text-indent: 0.5em;
+}
+
+body.chyron header figure.tabled figcaption dd:first-of-type {
+    display: table-cell;
+    width: 30%;
+    padding: 0;
+    text-align: right;
+    max-width: 6em;
+}
+
+body.chyron header figure.tabled figcaption dd:last-of-type {
+    display: table-cell;
+    width: 50%;
+    padding: 0 0.5em;
+    text-align: right;
+    text-indent: 0;
+}
+
+body.chyron header figure.tabled figcaption dl[itemprop=Updated] {
+    float: none;
+    margin-right: unset;
+}
+
+body.chyron header figure.tabled button[title="more/less"] {
+    transform: scaleY(-1);
+}
+
+/* BLOG */
+
+@import url('//fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+article[itemid=Blog] section > div:first-of-type p,
+article[itemid=Blog] section > div:first-of-type a {
+    font-family: "Lora", Cambria, Georgia, Palatino, serif;
+    font-size: unset;
+    font-size: 13pt;
+    line-height: 1.5;
+}
+
+article[itemid=Blog] section > div:first-of-type p {
+    margin-bottom: 1.5em;
+}
+
+article[itemid=Blog] section > div > div h2 {
+    color: #002B3D;
+    font-size: unset;
+    font-size: 19pt;
+}
+
+article[itemid=Blog] section > div > div h3 {
+    color: #002B3D;
+    font-size: unset;
+    font-size: 16pt;
+}
+
+article[itemid=Blog] section > div > div ins {
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+article[itemid=Blog] section > div > div ins em,
+article[itemid=Blog] section > div > div ins em a {
+    font-family: "Roboto Condensed","Roboto","Calibri",sans-serif !important;
+}
+
+article[itemid=Blog] section > div > div ins em,
+article[itemid=Blog] section > div > div > em {
+    display: inline-block;
+    margin: 1em 2em;
+    text-decoration: none;
+}
+
+article[itemid=Blog] section > div > div q {
+    font-size: unset;
+    font-size: 16pt;
+    font-style: italic;
+    display: inline-block;
+    padding: 2em 3em;
+    margin: 1rem 0;
+    background-color: whitesmoke;
+    border: 1px solid silver;
+    color: #0072a2
+}
+
+article[itemid=Blog] section > div > div q:before,
+article[itemid=Blog] section > div > div q:after {
+    content: none;
+}
+
+article[itemid=Blog] section > div > div q > em {
+    display: block;
+    margin-top: 0.5em;
+    text-align: right;
+}
+
+article[itemid=Blog] section > div > div q a {
+    font-size: inherit !important;
+}
+

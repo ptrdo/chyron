@@ -1,0 +1,74 @@
+@import url("//fonts.googleapis.com/css?family=Poppins:400,500,600,700");
+@import url("//fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("//fonts.googleapis.com/css?family=Roboto+Mono:400,500,700");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* EXCLUSIONS */
+
+body.Maps_VIEW main > div > footer,
+body.PrevalenceMap_VIEW main > div > footer
+{
+  display: none;
+}
+
+/* EXCLUSIONS Handhelds */
+
+@media only screen and (max-width: 1080px), (max-height: 1080px) {
+  body.Maps_VIEW main > div > header > figure[class*=chyron],
+  body.PrevalenceMap_VIEW main > div > header > figure[class*=chyron] {
+    /* display: none; */
+  }
+}
+
+/* Banner */
+.carousel .slide {
+  background: transparent!important;
+}
+
+/*Blog content*/
+.blog_img {
+  width:inherit;
+  height:unset;
+  max-width: 100%;
+}
+.lineDivider {
+  border-bottom: solid 1px black;
+}
